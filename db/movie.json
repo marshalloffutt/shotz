@@ -1,10 +1,10 @@
 {
     "movie": [
         {
-            "Name": "Uber Driver",
-            "Genre": "Psychological thriller",
-            "Release": "February 8, 2020",
-            "Description": "A mentally unstable veteran works as a nighttime Uber driver in Nashville, where the perceived decadance and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and a prostitute."
+            "name": "Uber Driver",
+            "genre": "Psychological thriller",
+            "release": "February 8, 2020",
+            "description": "A mentally unstable veteran works as a nighttime Uber driver in Nashville, where the perceived decadance and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and a prostitute."
         }
     ]
 }
