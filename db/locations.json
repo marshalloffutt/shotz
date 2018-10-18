@@ -1,0 +1,58 @@
+{
+    "locations": [
+        {
+            "Location Image": "http://files.www.fleetfeetnashville.com/wheretorun/centennialpark-process-s600x401.jpg",
+            "Name": "Centennial Park",
+            "Location Address": "2500 West End Ave, Nashville, TN 37203",
+            "Shoot Time": "Evening"
+        },
+        {
+            "Location Image": "http://sportsandentertainmentnashville.com/wp-content/uploads/2013/11/greenspaces-1-warner-parks.jpg",
+            "Name": "Edwin Warner Park",
+            "Location Address": "50 Vaughn Rd, Nashville, TN 37221",
+            "Shoot Time": "After Dark"
+        },
+        {
+            "Location Image": "http://trippintabi.com/wp-content/uploads/2016/11/IMG_8922-small.jpg",
+            "Name": "Cummins Station",
+            "Location Address": "209 10th Ave S, Nashville, TN 37203",
+            "Shoot Time": "Afternoon"
+        },
+        {
+            "Location Image": "https://nashvillelimo.com/wp-content/uploads/2013/03/nashville-skyline.jpg",
+            "Name": "Downtown",
+            "Location Address": "416 Broadway, Nashville, TN 37203",
+            "Shoot Time": "Morning"
+        },
+        {
+            "Location Image": "https://static.neighborhoods.com/blog/media/600x400/cover-da70375e6702c1cc347ad5fce72bb922.jpg",
+            "Name": "Shelby Bottoms",
+            "Location Address": "1900 Shelby Bottoms Greenway, Nashville, TN 37206",
+            "Shoot Time": "Evening"
+        },
+        {
+            "Location Image": "http://www.blackrefer.com/images3/ad-soul14.jpg",
+            "Name": "Printer's Alley",
+            "Location Address": "207 Printers Alley, Nashville, TN 37201",
+            "Shoot Time": "After Dark"
+        },
+        {
+            "Location Image": "https://static.neighborhoods.com/blog/media/600x400/cover-3cd166f1c9b2f99508b24655c9631f77.jpg",
+            "Name": "The Nations",
+            "Location Address": "5026 Centennial Blvd, Nashville, TN 37209",
+            "Shoot Time": "Evening"
+        },
+        {
+            "Location Image": "https://thefuntimesguide.com/images/blogs/belmont_campus.jpg",
+            "Name": "Belmont University",
+            "Location Address": "1900 Belmont Blvd, Nashville, TN 37212",
+            "Shoot Time": "Afternoon"
+        },
+        {
+            "Location Image": "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fill,h_400,w_600/jnlkvatekq4hcm1vcmwf",
+            "Name": "Hermitage Cafe",
+            "Location Address": "71 Hermitage Ave, Nashville, TN 37210",
+            "Shoot Time": "Morning"
+        }
+    ]
+}
