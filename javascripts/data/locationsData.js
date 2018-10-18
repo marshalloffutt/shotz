@@ -1,3 +1,5 @@
+import { writeLocations } from '../components/locationsComponent.js'
+
 // Load locations
 $.get('../db/locations.json')
 .done((data) => {

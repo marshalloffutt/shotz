@@ -1,3 +1,5 @@
+import { writeMovie } from '../components/movieComponent.js'
+
 // Load movie
 $.get('../db/movie.json')
 .done((data) => {
