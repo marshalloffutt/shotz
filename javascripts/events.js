@@ -1,7 +1,7 @@
 const locationSearch = () => {
     $("#searchBar").keypress(function() {
-        let searchTerm = $("#searchBar").val().toLowerCase;
-        $('.locations').not(':contains(searchTerm).toggle()')
+        let searchTerm = $("#searchBar").val();
+        $('.locations').not(`:contains(${searchTerm})`).hide();
     });
 };
 
