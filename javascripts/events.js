@@ -9,17 +9,20 @@ const locationSearch = () => {
 // Button Events
 const buttonEvents = () => {
     $('body').on('click', '#morningButton', (e) => {
-        console.log('buenos dias!');
-    //   $('.locations').not(:contains("Morning").hide();
+        $(".locations").show();
+        $(".locations").not(".Morning").hide();
     });
     $('body').on('click', '#afternoonButton', (e) => {
-        console.log('buenas tardes!');
+        $(".locations").show();
+        $(".locations").not(".Afternoon").hide();
     });
     $('body').on('click', '#eveningButton', (e) => {
-        console.log('buenas.... tardes?');
+        $(".locations").show();
+        $(".locations").not(".Evening").hide();
     });
     $('body').on('click', '#afterDarkButton', (e) => {
-        console.log('buenas noches!');
+        $(".locations").show();
+        $(".locations").not(".After").hide();
     });
 };
 
