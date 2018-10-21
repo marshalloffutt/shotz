@@ -28,6 +28,9 @@ const buttonEvents = () => {
         $(".locations").show();
         $(".locations").not(".After").hide();
     });
+    $('body').on('click', '#showAll', (e) => {
+        $(".locations").show();
+    })
 };
 
 
