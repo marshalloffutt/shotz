@@ -3,6 +3,10 @@ const locationSearch = () => {
     $("#searchBar").keypress(function() {
         let searchTerm = $("#searchBar").val();
         $('.locations').not(`:contains(${searchTerm})`).hide();
+        if (searchTerm.value == '') {
+            console.log('hello');
+            $(".locations").show();
+        }
     });
 };
 
