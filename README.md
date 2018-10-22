@@ -20,7 +20,7 @@ Morning button event.
 Afternoon button event.
 <img src="./screenshots/screenshot5.png">
 Evening button event.
-<img src="./screenshots/screenshot5.png">
+<img src="./screenshots/screenshot6.png">
 After Dark button event.
 
 ### How to Run 
