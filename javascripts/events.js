@@ -3,7 +3,8 @@ const locationSearch = () => {
     $("#searchBar").keypress(function() {
         let searchTerm = $("#searchBar").val();
         $('.locations').not(`:contains(${searchTerm})`).hide();
-    });
+        // `${searchTerm}` ? "Search..." : $(".locations").show();  
+    })
 };
 
 // Button Events
@@ -24,6 +25,9 @@ const buttonEvents = () => {
         $(".locations").show();
         $(".locations").not(".After").hide();
     });
+    $('body').on('click', '#showAll', (e) => {
+        $(".locations").show();
+    })
 };
 
 

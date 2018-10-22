@@ -4,7 +4,7 @@ const writeMovie = (arrayOfMovies) => {
     arrayOfMovies.forEach((movie) => {
         domString += `
         <div class="${movie} moviecol-md-6 col-md-offset-3">
-            <h3 id="thumbnail-label">${movie.name}</h3>
+            <h2 id="thumbnail-label">${movie.name}</h2>
             <p>${movie.genre}</p>
             <p>${movie.description}</p>
             <p>Estimated Release Date: ${movie.release}</p>

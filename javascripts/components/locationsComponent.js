@@ -8,7 +8,7 @@ const writeLocations = (arrayOfLocations) => {
             <div class="card-body">
                 <h5 class="card-title title">${location.name}</h5>
                 <p class="card-text address">${location.address}</p>
-                <p class="card-text ${location.time}">${location.time}</p>
+                <p class="card-text ${location.time}">Available Shoot Time: ${location.time}</p>
             </div>  
         </div>
     `
