@@ -1,54 +1,63 @@
 {
     "locations": [
         {
+            "id": "location1",
             "imageUrl": "http://files.www.fleetfeetnashville.com/wheretorun/centennialpark-process-s600x401.jpg",
             "name": "Centennial Park",
             "address": "2500 West End Ave, Nashville, TN 37203",
             "time": "Evening"
         },
         {
+            "id": "location2",
             "imageUrl": "http://sportsandentertainmentnashville.com/wp-content/uploads/2013/11/greenspaces-1-warner-parks.jpg",
             "name": "Edwin Warner Park",
             "address": "50 Vaughn Rd, Nashville, TN 37221",
             "time": "After Dark"
         },
         {
+            "id": "location3",
             "imageUrl": "http://trippintabi.com/wp-content/uploads/2016/11/IMG_8922-small.jpg",
             "name": "Cummins Station",
             "address": "209 10th Ave S, Nashville, TN 37203",
             "time": "Afternoon"
         },
         {
+            "id": "location4",
             "imageUrl": "https://nashvillelimo.com/wp-content/uploads/2013/03/nashville-skyline.jpg",
             "name": "Downtown",
             "address": "416 Broadway, Nashville, TN 37203",
             "time": "Morning"
         },
         {
+            "id": "location5",
             "imageUrl": "https://static.neighborhoods.com/blog/media/600x400/cover-da70375e6702c1cc347ad5fce72bb922.jpg",
             "name": "Shelby Bottoms",
             "address": "1900 Shelby Bottoms Greenway, Nashville, TN 37206",
             "time": "Evening"
         },
         {
+            "id": "location6",
             "imageUrl": "http://www.blackrefer.com/images3/ad-soul14.jpg",
             "name": "Printer's Alley",
             "address": "207 Printers Alley, Nashville, TN 37201",
             "time": "After Dark"
         },
         {
+            "id": "location7",
             "imageUrl": "https://static.neighborhoods.com/blog/media/600x400/cover-3cd166f1c9b2f99508b24655c9631f77.jpg",
             "name": "The Nations",
             "address": "5026 Centennial Blvd, Nashville, TN 37209",
             "time": "Evening"
         },
         {
+            "id": "location8",
             "imageUrl": "https://thefuntimesguide.com/images/blogs/belmont_campus.jpg",
             "name": "Belmont University",
             "address": "1900 Belmont Blvd, Nashville, TN 37212",
             "time": "Afternoon"
         },
         {
+            "id": "location9",
             "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fill,h_400,w_600/jnlkvatekq4hcm1vcmwf",
             "name": "Hermitage Cafe",
             "address": "71 Hermitage Ave, Nashville, TN 37210",
