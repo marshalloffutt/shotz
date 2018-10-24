@@ -1,9 +1,9 @@
 // Search Bar event
 const locationSearch = () => {
-    $("#searchBar").keypress(function() {
+    $("#searchBar").keyup(function() {
         let searchTerm = $("#searchBar").val();
+        $(".locations").show();
         $('.locations').not(`:contains(${searchTerm})`).hide();
-        // `${searchTerm}` ? "Search..." : $(".locations").show();  
     })
 };
 
