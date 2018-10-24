@@ -3,7 +3,7 @@ const locationSearch = () => {
     $("#searchBar").keyup(function() {
         let searchTerm = $("#searchBar").val();
         $(".locations").show();
-        $('.locations').not(`:contains(${searchTerm})`).hide();
+        $('.criteria').not(`:contains(${searchTerm})`).closest('.locations').hide();
     })
 };
 
