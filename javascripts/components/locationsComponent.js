@@ -1,5 +1,9 @@
 import { loadLocationsForMovies } from "../data/locationsData.js";
 
+const bindEvents = () => {
+    $()
+}
+
 // Add locations info to dom
 const writeLocations = (locations) => {
     let domString = '';

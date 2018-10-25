@@ -1,5 +1,9 @@
 import { loadMovies } from "../data/movieData.js";
 
+const bindEvents = () => {
+    $('#')
+}
+
 // Add movie info to dom
 const writeMovies = (movies) => {
     let domString = '';
