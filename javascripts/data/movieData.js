@@ -1,14 +1,15 @@
-import { writeMovie } from '../components/movieComponent.js'
-
 // Load movie
-const loadMovie = () => {
-    $.get('../db/movie.json')
-    .done((data) => {
-        writeMovie(data.movie);
-    })
-    .fail((error) => {
-        console.log({error});
+const loadMovies = () => {
+    return new Promise((resolve, reject) => {
+        $.get('../db/movie.json')
+            .done((data) => {
+                console.log(data);
+                resolve(data.movies);
+            })
+            .fail((error) => {
+                reject(error);
+            })
     });
 }
 
-export { loadMovie }
+export { loadMovies }
