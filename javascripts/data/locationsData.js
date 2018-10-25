@@ -3,9 +3,7 @@ const loadLocationsForMovies = (movieId) => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
             .done((data) => {
-                console.log(data);
                 const locationsForMovies = data.locations.filter(location => location.movie_id == movieId);
-                console.log(locationsForMovies);
                 resolve(locationsForMovies);
             })
             .fail((error) => {
