@@ -21,7 +21,7 @@ const writeLocations = (locations) => {
         </div>
     `
     })
-//     // Write to the available div
+    // Write to the available div
     $("#locations").append(domString);
 };
 
