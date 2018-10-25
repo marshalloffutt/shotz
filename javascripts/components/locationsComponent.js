@@ -5,7 +5,7 @@ const writeLocations = (locations) => {
     let domString = '';
     locations.forEach(location => {
         domString += `
-        <div id="${location.id} class="card locations ${location.time} m-4" style="width: 18rem;">
+        <div id="${location.id}" class="card locations ${location.time} m-4" style="width: 18rem;">
             <img class="card-img-top" src="${location.imageUrl}" alt="${location.name}">
             <div class="card-body criteria">
                 <h5 class="card-title title">${location.name}</h5>
@@ -21,10 +21,10 @@ const writeLocations = (locations) => {
     $("#locations").append(domString);
 };
 
-const initializeLoctionsView = () => {
+const initializeLocationsView = () => {
     loadLocationsForMovies().then((locations) => {
         writeLocations(locations);
     });
 };
 
-export { initializeLoctionsView }
+export { initializeLocationsView }

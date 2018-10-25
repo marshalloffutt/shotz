@@ -1,9 +1,12 @@
 import { initializeMainView } from './components/movieComponent.js';
-import { initializeLoctionsView } from './components/locationsComponent.js';
+import { initializeLocationsView } from './components/locationsComponent.js';
+import { locationSearch, buttonEvents } from './events.js';
 
 const runMyShit = () => {
     initializeMainView();
-    initializeLoctionsView();
+    initializeLocationsView();
+    locationSearch();
+    buttonEvents();
 };
 
 runMyShit();

@@ -30,7 +30,4 @@ const buttonEvents = () => {
     })
 };
 
-
-
-
 export { locationSearch, buttonEvents }
