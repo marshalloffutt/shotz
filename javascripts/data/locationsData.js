@@ -1,14 +1,36 @@
-import { writeLocations } from '../components/locationsComponent.js'
-
 // Load locations
-const loadLocations = () => {
-    $.get('../db/locations.json')
-    .done((data) => {
-        writeLocations(data.locations);
+const loadLocationsForMovies = (movieId) => {
+    return new Promise((resolve, reject) => {
+        $.get('../db/locations.json')
+            .done((data) => {
+                console.log(data);
+                const locationsForMovies = data.locations.filter(location => location.movie_id == movieId);
+                console.log(locationsForMovies);
+                resolve(locationsForMovies);
+            })
+            .fail((error) => {
+                reject(error);
+            })
     })
-    .fail((error) => {
-        console.log({error});
-    });
 }
 
-export { loadLocations }
+// const loadLocationsOnMovies = (movies) => {
+//     return new Promise((resolve, reject) => {
+//         $.get('../db/locations.json')
+//             .done((data) => {
+//                 const moviesWithLocations = movies.map(movie => {
+//                     const matchingLocations = data.locations.filter(location => location.movie_id === movie.id);
+//                     movie.locations = matchingLocations;
+//                     return movie;
+//                 })
+//                 resolve(moviesWithLocations);
+//             })
+//             .fail((error) => {
+//                 reject('you fucked up marshall', error);
+//             })
+//     })
+// }
+
+// loadLocationsOnMovies
+
+export { loadLocationsForMovies,  }
