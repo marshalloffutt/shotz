@@ -33,4 +33,4 @@ const loadLocationsForMovies = (movieId) => {
 
 // loadLocationsOnMovies
 
-export { loadLocationsForMovies,  }
+export { loadLocationsForMovies }
