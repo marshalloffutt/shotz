@@ -1,9 +1,5 @@
 import { loadLocationsForMovies } from "../data/locationsData.js";
 
-const bindEvents = () => {
-    $()
-}
-
 // Add locations info to dom
 const writeLocations = (locations) => {
     let domString = '';
@@ -25,10 +21,10 @@ const writeLocations = (locations) => {
     $("#locations").append(domString);
 };
 
-const initializeLocationsView = () => {
+const initializeLocationsOnMainView = () => {
     loadLocationsForMovies().then((locations) => {
         writeLocations(locations);
     });
 };
 
-export { initializeLocationsView }
+export { initializeLocationsOnMainView }
