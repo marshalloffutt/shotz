@@ -6,7 +6,7 @@
             "genre": "Psychological thriller",
             "release": "February 8, 2020",
             "description": "Its the movie Taxi Driver, but set in Nashville and with an Uber instead of a taxi.",
-            "locations": "[location1, location3, location4, location7, location9]"
+            "locations": ["location1", "location3", "location4", "location7", "location9"]
         },
         {
             "id": "movie2",
@@ -14,7 +14,7 @@
             "genre": "Comedy",
             "release": "November 11, 2021",
             "description": "Things get crazy Marshall plays hooky from Nashville Software School.",
-            "locations": "[location2, location5, location6, location7]"
+            "locations": ["location2", "location5", "location6", "location7"]
         },
         {
             "id": "movie3",
@@ -22,7 +22,7 @@
             "genre": "Silent Film",
             "release": "April 3, 2022",
             "description": "One must imagine him happy.",
-            "locations": "[location8]"
+            "locations": ["location8"]
         }
     ]
 }

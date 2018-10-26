@@ -20,7 +20,7 @@ const writeMovies = (movies) => {
                 <h6 class="card-subtitle mb-2 text-muted">${movie.genre}</h6>
                 <p class="card-text">${movie.description}</p>
                 <p class="card-text">Release Date: ${movie.release}</p>
-                <p class="card-text">${movie.movieLocations}</p>
+                <p class="card-text">${movie.locations.length} shoot locations</p>
             </div>
         </div>
             `
