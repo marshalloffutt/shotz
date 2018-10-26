@@ -1,4 +1,4 @@
-# Shotz (Part 1)
+# Shotz
 
 ### Description 
 An exercise where we use jQuery to create an movie locations app that uses AJAX, filters, event listeners to isolate locations for a movie shoot.
