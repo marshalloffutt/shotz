@@ -17,7 +17,7 @@ const loadLocationsOnMovies = (movies) => {
         $.get('../db/locations.json')
             .done((data) => {
                 const moviesWithLocations = movies.map(movie => {
-                    const matchingLocations = data.locations.filter(location => location.movie_id === movie.id);
+                    const matchingLocations = data.locations.filter(location => location.id === movie.locations);
                     movie.locations = matchingLocations;
                     return movie;
                 })
@@ -29,4 +29,4 @@ const loadLocationsOnMovies = (movies) => {
     })
 }
 
-export { loadLocations }
+export { loadLocations, loadLocationsOnMovies }
