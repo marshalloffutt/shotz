@@ -1,5 +1,5 @@
 // Load locations
-const loadLocations = (movieId) => {
+const loadLocations = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
             .done((data) => {
@@ -12,23 +12,21 @@ const loadLocations = (movieId) => {
     })
 }
 
-// const loadLocationsOnMovies = (movies) => {
-//     return new Promise((resolve, reject) => {
-//         $.get('../db/locations.json')
-//             .done((data) => {
-//                 const moviesWithLocations = movies.map(movie => {
-//                     const matchingLocations = data.locations.filter(location => location.movie_id === movie.id);
-//                     movie.locations = matchingLocations;
-//                     return movie;
-//                 })
-//                 resolve(moviesWithLocations);
-//             })
-//             .fail((error) => {
-//                 reject('error', error);
-//             })
-//     })
-// }
-
-// loadLocationsOnMovies
+const loadLocationsOnMovies = (movies) => {
+    return new Promise((resolve, reject) => {
+        $.get('../db/locations.json')
+            .done((data) => {
+                const moviesWithLocations = movies.map(movie => {
+                    const matchingLocations = data.locations.filter(location => location.movie_id === movie.id);
+                    movie.locations = matchingLocations;
+                    return movie;
+                })
+                resolve(moviesWithLocations);
+            })
+            .fail((error) => {
+                reject('error', error);
+            })
+    })
+}
 
 export { loadLocations }
