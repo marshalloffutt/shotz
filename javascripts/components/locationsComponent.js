@@ -1,4 +1,4 @@
-import { loadLocations } from "../data/locationsData.js";
+import { loadLocations, loadLocationsOnMovies } from "../data/locationsData.js";
 
 // Add locations info to dom
 const writeLocations = (locations) => {
