@@ -23,7 +23,7 @@ const writeMovies = (movies) => {
                 <p class="card-text">${movie.locations.length} shoot locations</p>
             </div>
         </div>
-            `
+        `
     });
     $('#movies').html(domString);
 }

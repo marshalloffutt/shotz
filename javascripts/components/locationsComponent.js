@@ -1,4 +1,4 @@
-import { loadLocationsForMovies } from "../data/locationsData.js";
+import { loadLocations } from "../data/locationsData.js";
 
 // Add locations info to dom
 const writeLocations = (locations) => {
@@ -22,7 +22,7 @@ const writeLocations = (locations) => {
 };
 
 const initializeLocationsOnMainView = () => {
-    loadLocationsForMovies().then((locations) => {
+    loadLocations().then((locations) => {
         writeLocations(locations);
     });
 };

@@ -1,5 +1,5 @@
 // Load locations
-const loadLocationsForMovies = (movieId) => {
+const loadLocations = (movieId) => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
             .done((data) => {
@@ -24,11 +24,11 @@ const loadLocationsForMovies = (movieId) => {
 //                 resolve(moviesWithLocations);
 //             })
 //             .fail((error) => {
-//                 reject('you fucked up marshall', error);
+//                 reject('error', error);
 //             })
 //     })
 // }
 
 // loadLocationsOnMovies
 
-export { loadLocationsForMovies }
+export { loadLocations }
