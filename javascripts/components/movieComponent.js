@@ -1,11 +1,14 @@
-import { loadMovies } from "../data/movieData.js";
+import { loadMovies, moviesLocationsArray } from "../data/movieData.js";
+import { loadLocationsOnMovies } from "../data/locationsData.js";
+import { writeLocations } from "./locationsComponent.js";
 
 // Clicking on a movie card does something
 const mainViewEvents = () => {
     $('#movies').on('click', '.movie-card', (e) => {
         const movieCardIClicked = $(e.target).closest('.movie-card').attr('id');
-        $('#main-view').hide();
-        $('#secondary-view').show();
+        // $('#main-view').hide();
+        // $('#secondary-view').show();
+        displayLocationsForMovie(movieCardIClicked);
     })
 }
 
@@ -32,6 +35,19 @@ const initializeMainView = () => {
     loadMovies().then((movies) => {
         writeMovies(movies);
         mainViewEvents();
+    })
+}
+
+const displayLocationsForMovie = (movieId) => {
+    moviesLocationsArray(movieId)
+    .then((movieLocations) => {
+        return loadLocationsOnMovies(movieLocations)
+    })
+    .then((moviesWithLocations) => {
+        writeLocations(moviesWithLocations);
+    })
+    .catch((error) => {
+        console.error('go home, marshall', error);
     })
 }
 

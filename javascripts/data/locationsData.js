@@ -12,21 +12,26 @@ const loadLocations = () => {
     })
 }
 
-const loadLocationsOnMovies = (movies) => {
+// This is garbage, and I don't know what it is doing here
+const loadLocationsOnMovies = (movieLocations) => {
+    let newArray = [];
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
-            .done((data) => {
-                const moviesWithLocations = movies.map(movie => {
-                    const matchingLocations = data.locations.filter(location => location.id === movie.locations);
-                    movie.locations = matchingLocations;
-                    return movie;
+        .done((data) => {
+            movieLocations.forEach(movieLocation => {
+                data.locations.forEach((location) => {
+                    if (location.id === movieLocation) {
+                        newArray.push(location);
+                    }
                 })
-                resolve(moviesWithLocations);
             })
-            .fail((error) => {
-                reject('error', error);
-            })
+            resolve(newArray);
+        })
+        .fail((error) => {
+            reject(error);
+        })
     })
 }
+
 
 export { loadLocations, loadLocationsOnMovies }
