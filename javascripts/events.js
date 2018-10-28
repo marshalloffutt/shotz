@@ -28,6 +28,10 @@ const buttonEvents = () => {
     $('body').on('click', '#showAll', (e) => {
         $(".locations").show();
     })
+    $('body').on('click', '#toMainView', (e) => {
+        $("#main-view").show();
+        $("#secondary-view").hide();
+    })
 };
 
 export { locationSearch, buttonEvents }
