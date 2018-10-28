@@ -17,11 +17,10 @@ const writeLocations = (locations) => {
         </div>
     `
     })
-    // Write to the available div
     $("#locations").append(domString);
 };
 
-// Write locations cars to secondary view
+// Write locations cards to secondary view
 const writeLocationsForMovie = (locations) => {
     let domString = '';
     locations.forEach(location => {
@@ -38,7 +37,6 @@ const writeLocationsForMovie = (locations) => {
         </div>
     `
     })
-    // Write to the available div
     $("#locations-for-movie").append(domString);
 };
 

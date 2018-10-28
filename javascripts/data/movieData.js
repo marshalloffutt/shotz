@@ -27,6 +27,7 @@ const moviesLocationsArray = (movieId) => {
         }).fail((error => {
             reject(error);
         }))
-    })}
+    })
+}
 
 export { loadMovies, moviesLocationsArray }
