@@ -1,13 +1,13 @@
 import { loadMovies, moviesLocationsArray } from "../data/movieData.js";
 import { loadLocationsOnMovies } from "../data/locationsData.js";
-import { writeLocations } from "./locationsComponent.js";
+import { writeLocations, writeLocationsForMovie } from "./locationsComponent.js";
 
 // Clicking on a movie card does something
 const mainViewEvents = () => {
     $('#movies').on('click', '.movie-card', (e) => {
         const movieCardIClicked = $(e.target).closest('.movie-card').attr('id');
-        // $('#main-view').hide();
-        // $('#secondary-view').show();
+        $('#main-view').hide();
+        $('#secondary-view').show();
         displayLocationsForMovie(movieCardIClicked);
     })
 }
@@ -40,11 +40,14 @@ const initializeMainView = () => {
 
 const displayLocationsForMovie = (movieId) => {
     moviesLocationsArray(movieId)
+    // movieLocations comes from movieLocationsArray on movieData
+    // loadLocationsOnMovies is the second promise on locationsData
     .then((movieLocations) => {
         return loadLocationsOnMovies(movieLocations)
     })
+    // I don't know where moviesWithLocations comes from. I don't understand this part.
     .then((moviesWithLocations) => {
-        writeLocations(moviesWithLocations);
+        writeLocationsForMovie(moviesWithLocations);
     })
     .catch((error) => {
         console.error('go home, marshall', error);

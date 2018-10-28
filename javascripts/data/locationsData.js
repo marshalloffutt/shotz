@@ -1,4 +1,4 @@
-// Load locations
+// Load locations promise for main view
 const loadLocations = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
@@ -12,7 +12,8 @@ const loadLocations = () => {
     })
 }
 
-// This is garbage, and I don't know what it is doing here
+// Second locations promise for secondary view. The 'movieLocations' bit comes from
+// the second promise on the movieData.js. We call this function on movieComponent.
 const loadLocationsOnMovies = (movieLocations) => {
     let newArray = [];
     return new Promise((resolve, reject) => {

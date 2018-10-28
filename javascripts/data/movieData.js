@@ -1,4 +1,4 @@
-// Load movie
+// Load movie promise for movie.json
 const loadMovies = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/movie.json')
@@ -11,6 +11,7 @@ const loadMovies = () => {
     });
 }
 
+// Second movie promise for movie.json, but specific to movie locations
 const moviesLocationsArray = (movieId) => {
     let movieLocations = '';
     return new Promise((resolve, reject) => {
