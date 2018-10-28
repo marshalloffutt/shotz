@@ -1,29 +1,29 @@
 # Shotz
 
-### Description 
+## Description 
 An exercise where we use jQuery to create an movie locations app that uses AJAX, filters, event listeners to isolate locations for a movie shoot.
 
-### Technology Used
+## Technologies Used
 > * HTML5
 > * CSS
 > * Javascript
 > * Bootstrap 4
 
-### Screenshot
+## Screenshots
+### Normal view
 <img src="./screenshots/screenshot1.png">
-Normal full page view.
-<img src="./screenshots/screenshot2.png">
-Keypress to perform search.
-<img src="./screenshots/screenshot3.png">
-Morning button event.
-<img src="./screenshots/screenshot4.png">
-Afternoon button event.
-<img src="./screenshots/screenshot5.png">
-Evening button event.
-<img src="./screenshots/screenshot6.png">
-After Dark button event.
 
-### How to Run 
+### Search bar in action
+<img src="./screenshots/screenshot2.png">
+
+### Filter button example
+<img src="./screenshots/screenshot3.png">
+
+### Click movie view
+<img src="./screenshots/screenshot4.png">
+
+
+## How to Run 
 ```
 1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
 2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
