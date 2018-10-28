@@ -11,16 +11,16 @@ An exercise where we use jQuery to create an movie locations app that uses AJAX,
 
 ## Screenshots
 ### Normal view
-<img src="./screenshots/screenshot1.png">
+<img src="./screenshots/snap1.png">
 
 ### Search bar in action
-<img src="./screenshots/screenshot2.png">
+<img src="./screenshots/snap2.png">
 
 ### Filter button example
-<img src="./screenshots/screenshot3.png">
+<img src="./screenshots/snap3.png">
 
 ### Click movie view
-<img src="./screenshots/screenshot4.png">
+<img src="./screenshots/snap4.png">
 
 
 ## How to Run 
