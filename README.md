@@ -22,3 +22,6 @@ This was a fiarly intensive exercise where we use jQuery, AJAX, filters, event l
 1. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
 2. Navigate to the project folder in command line interface and type: `http-server -p 8080`  
 3. This will show at: `http://localhost:8080` in your internet browser.  
+
+## Notes
+I intend to re-code this entire project in a [new repo](https://github.com/marshalloffutt/webpack-shotz), and use webpack, Firebase, and CRUD methods so that the user can add/edit/delete their own shooting locations, or movies should they choose to do so. 
